@@ -17,7 +17,7 @@ class UploadedFile(models.Model):
         max_length=255
     )
 
-    size = models.BigIntegerField()
+    size = models.PositiveBigIntegerField()
 
     uploaded_at = models.DateTimeField(
         auto_now_add=True
